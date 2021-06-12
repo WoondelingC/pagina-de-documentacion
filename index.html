@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="main">
+    <nav id="navbar">
+        <header>Documentación de Variables</header>
+        <a href="#Introducción" class="nav-link">Introducción</a>
+        <a href="#¿Qué_es_una_variable?" class="nav-link">¿Qué es una variable?</a>
+        <a href="#Tipos_de_variables" class="nav-link">Tipos de variables</a>
+        <a href="#Operadores_aritmeticos" class="nav-link">Operadores aritmeticos</a>
+        <a href="#Algunos_cálculos_sencillos" class="nav-link">Algunos cálculos sencillos</a>
+        <a href="#Interactuar_con_el_usuario" class="nav-link">Interactuar con el usuario</a>
+        <a href="#Resumen" class="nav-link">Resumen</a>
+        
+    </nav>
+          
+
+        <main id="main-doc">
+
+            <section class="main-section" id="Introducción">
+            <header>Introducción</header>
+
+            <p>A lo largo de la lectura, descubrirás el uso de variables, los principales tipos que pueden
+                contener y sobre todo la forma de hacer tus primeros cálculos. También se presenta la
+                concatenación y los tipos de conversión. Y, por último, una parte importante de este capítulo
+                trata el uso de una nueva característica que permite interactuar con el usuario.</p>
+            </section>
+
+            <section class="main-section" id="¿Qué_es_una_variable?">
+                <header>¿Qué es una variable?</header>
+
+                <p>En pocas palabras, una variable es un espacio de almacenamiento en un ordenador para
+                    grabar cualquier tipo de datos como una cadena de caracteres, un valor numérico o estructuras
+                    un poco más específicas.</p>
+
+                <p>En primer lugar, ¿qué significa "declarar una variable" significa? Se trata simplemente de
+                    espacio de almacenamiento de reserva en memoria, nada más. Una vez que se declara la
+                    variable, puedes comenzar a almacenar datos sin problema</p>
+
+                <p>Para declarar una variable, primero debes encontrar un nombre. Es importante destacar que
+                    el nombre de una variable puede contener sólo caracteres alfanuméricos, es decir, letras de la
+                    A a la Z y números del 0 al 9, guión bajo (_) y dólar ($) también son aceptados. Algo más: el
+                    nombre de la variable no puede comenzar con un número y no puede consistir únicamente de
+                    palabras clave utilizadas por Javascript. Por ejemplo, no se puede crear una variable llamada
+                    var porque encontrarás que esta palabra clave ya está en uso, sin embargo, puedes crear una
+                    variable llamada var_.</p>
+
+                    <p>La palabra clave var está presente para indicar que se declara una variable. Una vez que se
+                        declara, se puede almacenar lo que quieras:<br>
+                        Código: JavaScript</p>
+
+                    <code>var miVariable;
+                        miVariable = 2;</code>
+            </section>
+
+            <section class="main-section" id="Tipos_de_variables">
+                <header>Tipos de variables</header>
+
+                <p>A diferencia de muchos lenguajes, JavaScript es un lenguaje de tipado dinámicamente. Esto
+                    significa, generalmente, que cualquier declaración de variables se hace con la palabra clave var
+                    independientemente de su contenido, mientras que en otros lenguajes, como el C, es necesario
+                    especificar el tipo de contenido que tendrá que contener la variable.<br>
+                    A diferencia de muchos lenguajes, JavaScript es un lenguaje de tipado dinámicamente. Esto
+                    significa, generalmente, que cualquier declaración de variables se hace con la palabra clave var
+                    independientemente de su contenido, mientras que en otros lenguajes, como el C, es necesario
+                    especificar el tipo de contenido que tendrá que contener la variable.</p>
+
+                <p><strong> tipo numérico (número):</strong> representa cualquier número, ya sea un entero, un número
+                    negativo, en notación científica, etc. En pocas palabras, este es el tipo de números.
+                    Para asignar un tipo numérico a una variable, sólo tienes que escribir el número var
+                    numero = 5; Al igual que muchos lenguajes, JavaScript reconoce varios formatos para
+                    los números, como por ejemplo escribir var numero = 5.5 o en notación científica var
+                    número = 3.65 e5, o escribir el número hexadecimal, var numero= 0x391; En resumen,
+                    hay diferentes maneras de escribir los valores numéricos.</p>
+
+                <p>Cadenas de caracteres (alias string): Este tipo representa texto. Puede asignarse de
+                    dos maneras diferentes.<br>
+                    Código: JavaScript</p>
+
+                    <code>var text1 = "Mi primer texto" / / Con comillas
+                        var text2 = 'Mi segundo mensaje' / / Con apóstrofos</code>
+
+                <p>Es importante tener en cuenta que si escribes miVariable var = '2 ', el tipo de esta
+                    variable es
+                    cadena de caracteres y no un tipo numérico.</p>
+
+                <p>Booleanos (booleano): son un tipo particular de que se tratará más adelante. Mientras
+                    tanto, en pocas palabras, un tipo booleano permite dos estados verdadero o falso. Estos
+                    dos estados se puede escribir como sigue:<br>
+                    Código: JavaScript</p>
+
+                    <code>var EsVerdader = true;
+                        var EsFalso = false;</code>
+            </section>
+
+            <section class="main-section" id="Operadores_aritmeticos">
+                <header>Operadores aritmeticos</header>
+
+                <p>Ahora que se declara una variable y se asignar un valor, podemos comenzar la sección sobre
+                    los operadores aritméticos. Se verá más adelante que hay varios tipos de operadores, pero por
+                    ahora nos centraremos exclusivamente en los operadores aritméticos. Estos son la base para
+                    todos los cálculos y son cinco.</p>
+
+                    <table>
+                        <tr>
+                            <th>Operador</th>
+                            <th>Simbolo</th>
+                        </tr>
+                        <tr>
+                            <td>suma</td>
+                            <td>+</td>
+                        </tr>
+                        <tr>
+                            <td>sustracción</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>multiplicacion</td>
+                            <td>*</td>
+                        </tr>
+                        <tr>
+                            <td>división</td>
+                            <td>/</td>
+                        </tr>
+                        <tr>
+                            <td>módulo</td>
+                            <td>%</td>
+                        </tr>
+                    
+                    </table>
+
+                <p>El último operador, módulo, es simplemente el resto de una división. Por ejemplo, si se divide 5
+                    entre 2 se tiene resto 1, que es el módulo.</p>
+
+            </section>
+
+            <section class="main-section" id="Algunos_cálculos_sencillos">
+                <header>Algunos cálculos sencillos</header>
+
+                <p>Programar el cálculo es casi tan fácil como en una calculadora, por ejemplo:<br>
+                    Código: JavaScript</p>
+
+                    <code>var resultado = 3 + 2;
+                        alert (resultado) / / Muestra « 5 »</code>
+
+                <p>Así que puedes hacer cálculos con dos números, es bueno, pero con dos variables que
+                    contienen números en sí es más útil:<br>
+                    Código: JavaScript</p>
+
+                    <code>var número1=3, número2 = 2, resultado;
+                        resultado = numero1 * numero2;
+                        alert (resultado) / / Muestra: « 6 »</code>
+
+            </section>
+
+            <section class="main-section" id="Interactuar_con_el_usuario">
+                <header>Interactuar con el usuario</header>
+
+                <p>La concatenación es un buen momento para introducir la primera interacción con el usuario a
+                    través de la función prompt (). He aquí cómo se usa:<br>
+                    Código : JavaScript</p>
+
+                    <code>var NombreUsuario = prompt('Introduce nombre:');
+                        alert(NombreUsuario); // Muestra el nombre introducido</code>
+
+                <p>La función prompt () se utiliza como alert (), pero tiene una pequeña particularidad. Devuelve lo
+                    que el usuario escribió bajo una cadena de caracteres, es por eso que escribió esto:<br>
+                    Código: JavaScript</p>
+
+                    <code>var texto = prompt ('Entra algo:');</code>
+
+                <p>Así, el texto escrito por el usuario terminará almacenado directamente en el texto variable.
+                    Ahora podemos tratar de saludar a nuestros visitantes:<br>
+                    Código: JavaScript</p>
+
+                    <code>var inicio = 'Hola', nombre, final = ' !', resultado;
+                        nombre= prompt ("¿Cuál es tu nombre? ');
+                        resultado = inicio + nombre + final
+                        alert (resultado);</code>
+
+                <p>Ten en cuenta que en nuestro caso concatenamos cadenas de caracteres, pero se pueden
+                    concatenar una cadena y un número de la misma manera:<br>
+                    Código : JavaScript</p>
+
+                    <code>var text o= 'Un nombre : ', numero= 42, resultado;
+                        resultado= texto + numero;
+                        alert(resultado); // Muestra: « Un nombre : 42 »</code>
+
+            </section>
+
+            <section class="main-section" id="Resumen">
+                <header>Resumen</header>
+                
+                <ul>
+                    <li>Una variable es una manera de almacenar un valor.</li>
+                    <li>Usamos la palabra clave var para declarar una variable, y usamos = para asignar un valor a la
+                        variable.</li>
+                    <li>Las variables se escriben de forma dinámica, lo que significa que no es necesario especificar
+                        el tipo de contenido que la variable contendrá.</li>
+                    <li>Con diferentes operadores, podemos hacer las transacciones entre las variables.</li>
+                    <li>El operador + concatena cadenas de caracteres, es decir, de inicio a fin.</li>
+                    <li>La función prompt() permite interactuar con el usuario.</li>
+                </ul>
+
+            </section>
+
+        </main>
+    </div>
+</body>
+
+</html>

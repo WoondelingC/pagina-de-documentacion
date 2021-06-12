@@ -1,0 +1,72 @@
+.main{
+    display: grid;
+    grid-template-columns: minmax(300px, auto)1fr;
+    grid-template-areas: "navbar mainContent";
+    grid-gap: 30px;
+    margin-top:30px;
+}
+#navbar{
+    grid-area: navbar;
+    position: fixed;
+    font-size: 22px;
+}
+#main-doc{
+    grid-area: mainContent;
+    margin-right: 30px;
+    font-size: 18px;
+
+}#navbar a{
+    display: block;
+    margin: 25px 0;
+    border:1px solid rgb(0, 0, 255);
+    text-decoration: none;
+    color: #000;
+    background-color: rgb(182, 217, 228);
+}
+header{
+    font-size: 25px;
+    font-weight: bold;
+}
+code{
+    background-color: rgb(156, 195, 195);
+    display: block;
+    padding: 25px;
+    font-weight: bold;
+}
+.main-section{
+    text-align: justify;
+}
+li{
+    padding: 10px;
+}
+table{
+    border:1px solid black;
+}th {
+    border: 1px solid black;
+    text-align: center;
+    border-collapse: collapse;
+}td{
+    border: 1px solid black;
+    text-align: center;
+    border-collapse: collapse;
+}tr{
+    border: 1px solid black;
+    text-align: center;
+    border-collapse:collapse;
+}
+
+
+
+@media screen and (max-width: 640px){
+
+}main{
+    grid-template-columns: 10px;
+    grid-template-areas: "navbar mainContent";
+    
+
+}
+.main-section{
+    text-align: justify;
+}#navbar{
+    width: 250px;
+}    
