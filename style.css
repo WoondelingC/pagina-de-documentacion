@@ -1,11 +1,12 @@
 .main{
     display: grid;
-    grid-template-columns: minmax(300px, auto)1fr;
+    grid-template-columns: minmax(270px, auto)1fr;
     grid-template-areas: "navbar mainContent";
     grid-gap: 30px;
-    margin-top:30px;
+    margin-top:20px;
 }
 #navbar{
+    width: 18%;
     grid-area: navbar;
     position: fixed;
     font-size: 22px;
@@ -23,14 +24,16 @@
     color: #000;
     background-color: rgb(182, 217, 228);
 }
-header{
+.titulos{
     font-size: 25px;
     font-weight: bold;
 }
 code{
+    border-radius: 5px;
+    margin-bottom: 10px;
     background-color: rgb(156, 195, 195);
     display: block;
-    padding: 25px;
+    padding: 12px;
     font-weight: bold;
 }
 .main-section{
@@ -53,20 +56,48 @@ table{
     border: 1px solid black;
     text-align: center;
     border-collapse:collapse;
+}.navegador{
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding: 5px;
 }
-
-
 
 @media screen and (max-width: 640px){
 
-}main{
-    grid-template-columns: 10px;
-    grid-template-areas: "navbar mainContent";
-    
-
+.main{
+    display: flex;
+    margin-top: 40%;
+    margin-bottom: 60px;
+    flex-direction: column
 }
-.main-section{
-    text-align: justify;
-}#navbar{
-    width: 250px;
-}    
+
+#main-doc {
+    width: 94%;
+    margin-left: 10px;
+    margin-top: 85%;
+}
+.navegador {
+    background-color: white;
+    padding: 8px;
+}
+#navbar {
+    background-color: #c6e6e640;
+    position: absolute;
+    top: 0;
+    padding: 0px;
+    margin-top: 20px;
+    width: 90%;
+    border-radius: 10px;
+}
+#navbar a {
+    display: block;
+    padding: 0;
+    cursor: pointer;
+    text-align: center;
+}
+.titulos {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+}
